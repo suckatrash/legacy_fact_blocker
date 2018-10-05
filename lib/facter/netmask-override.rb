@@ -14,7 +14,7 @@
 #
 # idea and originial source by Mark 'phips' Phillips
 #
-require 'facter/netmask-override'
+require 'facter/util/netmask-override'
 
 Facter.add("netmask") do
   has_weight 100
