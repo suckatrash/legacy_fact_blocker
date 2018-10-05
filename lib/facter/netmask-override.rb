@@ -28,15 +28,7 @@ Facter.add(:netmask) do
   has_weight 100
   confine :kernel => :windows
   setcode do
-    require 'facter/util/ip/windows'
 
-    mask = nil
-
-    adapters = Facter::Util::IP::Windows.get_preferred_ipv4_adapters
-    adapters.find do |nic|
-      nic.IPSubnet.any? do |subnet|
-
-      end
     end
 
   end
