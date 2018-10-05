@@ -16,7 +16,7 @@ require 'facter/util/macaddress'
 Facter.add(:interfaces) do
   confine :kernel => Facter::Util::IP.supported_platforms
   setcode do
-    Facter::Util::IP.get_interfaces.collect { |iface| Facter::Util::IP.alphafy(iface) }.join(",")
+    #Facter::Util::IP.get_interfaces.collect { |iface| Facter::Util::IP.alphafy(iface) }.join(",")
   end
 end
 
