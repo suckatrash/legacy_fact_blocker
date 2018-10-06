@@ -28,8 +28,6 @@ Facter.add(:netmask) do
   has_weight 100
   confine :kernel => :windows
   setcode do
-
-    end
-
   end
+
 end
